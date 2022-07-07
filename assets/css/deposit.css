@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* header */
+.header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-wrap {
+    margin: 0 8px 30px 8px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1210px;
+}
+
+.header-logo {
+    margin-top: 8px;
+}
+
+.header-logo img {
+    max-height: 90px;
+}
+
+.nav__pc {
+    width: 55%;
+    display: flex;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+
+.header-item {}
+
+.header-item:hover .header-item-link {
+    color: #3c435e;
+}
+
+.header-item.active .header-item-link {
+    color: #3c435e;
+}
+
+.header-item-link {
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9rem;
+    color: #7d7e80;
+}
+
+.btn-login {
+    border: 1px solid;
+    color: #fff;
+    background-color: #f29e33;
+    padding: 8px 18px;
+    border-radius: 99px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* body */
+
+.container {
+    width: 100%;
+    margin: 0;
+    margin-top: 100px
+}
+
+.body-wrap {
+    width: 100%;
+}
+
+.content-img {
+    width: 100%;
+    background-image: url("../img/about.png");
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.content-wrap {
+    margin: 28px 0 8px 0;
+}
+
+.content-wrap-title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-wrap-title h2 {
+    border: 2px solid #e8e8e8;
+
+}
+
+
+.content-wrap-desc {
+    font-size: 1.3rem;
+    margin: 20px 0 10px 0;
+    display: block;
+}
+
+.content-wrap-img {
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-wrap-img img {
+    width: 272px;
+    height: 545px;
+    padding: 10px;
+}
+
+
+.content-wrap-title-1 {
+    padding: 4px 0 10px 0;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 60px;
+    color: rgba(0, 0, 0, .5);
+    padding: 12px 0 15px;
+    font-size: .9em;
+    margin-left: 24px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #7d7e80;
+}
+
+/* button up */
+
+.button-up {
+    position: fixed;
+    right: 60px;
+    bottom: 40px;
+    padding: 10px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.button-up a {
+    text-decoration: none;
+}
+
+.icon-up {
+    font-size: 3rem;
+    color: #000;
+}
+
+/* reponsive */
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    display: none;
+    margin-left: 10px;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIN linear 0.2s;
+
+}
+
+.nav__mobile {
+    position: fixed;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity ease 0.2s;
+    z-index: 99;
+}
+
+.navbar_moblie-input:checked~.nav-overlay {
+    display: block;
+}
+
+.navbar_moblie-input:checked~.nav__mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.header-item.active .mobile_header-item-link {
+    color: #3c435e;
+}
+
+.mobile-header-list {
+    margin-top: 24px;
+    list-style: none;
+}
+
+.mobile_header-item-link {
+    text-decoration: none;
+    color: #7d7e80;
+    padding: 16px;
+    font-size: .8rem;
+    font-weight: 600;
+    /* border-bottom: 1px solid #ccc; */
+    display: block;
+
+}
+
+
+.header-item:hover .mobile_header-item-link {
+    background-color: #f4f3f3;
+}
+
+.nav__mobile-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    color: #666;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+@media (max-width:1024px) {
+    .navbar-icon {
+        display: block;
+    }
+
+    .nav__pc {
+        display: none;
+    }
+
+}

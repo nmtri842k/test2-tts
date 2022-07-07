@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* header */
+
+.header {
+
+    background-color: #fff;
+}
+
+.header-wrap {
+    margin: 0 8px 8px 8px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1210px;
+
+
+}
+
+.header-logo {
+    margin-top: 8px;
+}
+
+.header-logo img {
+    max-height: 90px;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 55%;
+
+}
+
+.header-item {}
+
+.header-item:hover .header-item-link {
+    color: #3c435e;
+}
+
+.header-item.active .header-item-link {
+    color: #3c435e;
+}
+
+.header-item-link {
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9rem;
+    color: #7d7e80;
+}
+
+.btn-login {
+    border: 1px solid;
+    color: #fff;
+    background-color: #f29e33;
+    padding: 8px 18px;
+    border-radius: 99px;
+    font-weight: 700;
+}
+
+
+/* modal */
+
+.modal {
+    margin-top: 40px;
+}
+
+.login-wrap {
+    width: 35%;
+    background-color: #fff;
+    padding: 36px;
+
+}
+
+.login-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    padding: 4px 0;
+}
+
+.input {
+    padding: 8px 6px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.btn-form-login {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    color: #fff;
+    background-color: #facf85;
+    padding: 8px 18px;
+    width: 100%;
+    border-radius: 10px;
+    line-height: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.login-login_with {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+
+
+
+}
+
+.login-login_with-link {
+    text-decoration: none;
+}
+
+.login-login_with-link-app {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(231, 225, 225);
+    background-color: var(--white-color);
+    border-radius: 30px;
+}
+
+.login_with-link-app-text {
+    flex: 5;
+    margin-left: 20px;
+    font-size: 1rem;
+    word-spacing: 1px;
+    color: var(--text-color);
+    padding: 4px;
+    line-height: 2rem;
+    display: block;
+    font-weight: 300;
+
+}
+
+.login_with-link-app-icon {
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1rem;
+    color: #3a5999;
+}
+
+.login_with-link-app-icon-gg {
+    color: #ea4535;
+}
+
+
+.login-forgot {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+}
+
+.login-forgot a {
+    color: #3a5999;
+    text-decoration: underline;
+}
+
+.creat-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0 16px 0;
+    margin-left: -10px;
+}
+
+.creat-account a {
+    color: #3a5999;
+    text-decoration: none;
+}
+
+
+.creat-cookie {}
+
+.cookie-list {
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-top: 16px;
+}
+
+.cookie-item a {
+    text-decoration: none;
+    font-size: .85rem;
+    color: #3c435e;
+
+}
+
+/* footer */
+
+.footer {
+    color: rgba(0, 0, 0, .5);
+    padding: 12px 0 15px;
+    font-size: .9em;
+    margin-left: 24px;
+    margin-top: 100px;
+
+}
+
+
+.footer-wrap {}
+
+.footer-list {
+    padding: 8px 0 24px 0;
+    display: block;
+    list-style-type: none;
+}
+
+.footer-list h4 {
+    margin-bottom: 10px;
+    color: #374151;
+    font-size: 1rem;
+}
+
+
+.footer-item {
+    padding: 4px 0 6px 0;
+}
+
+.footer-item a {
+    color: #7d7e80;
+
+    text-decoration: none;
+}
+
+.footer-credit {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e8e8e8;
+    padding: 16px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #7d7e80;
+}
