@@ -187,4 +187,8 @@ html {
         display: none;
     }
 
+    .btn-login {
+        margin: 4px 0 0 120px;
+    }
+
 }
