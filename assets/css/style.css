@@ -244,6 +244,80 @@ html {
 }
 
 
+
+/* call */
+
+.footer-call {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e83b8;
+    animation: ring ease 0.8s;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.footer-call:hover {
+    background-color: #f75e5a;
+    animation: ring--hover ease 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.footer-call-link {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+/* animation */
+@keyframes ring {
+    from {
+        box-shadow: 0;
+        transform: rotate(45deg);
+    }
+
+    to {
+        box-shadow: 0px 1px 5px 10px #8cc6eb;
+        transform: rotate(0);
+    }
+}
+
+@keyframes ring--hover {
+    25% {
+        box-shadow: 0;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        box-shadow: 0px 1px 5px 10px #ec8c89;
+        transform: rotate(45deg);
+    }
+
+    75% {
+        box-shadow: 0px 1px 5px 10px #ec8c89;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        box-shadow: 0px 1px 5px 10px #ec8c89;
+        transform: rotate(45deg);
+
+    }
+}
+
+
+
+
 @media (max-width:1024px) {
     .navbar-icon {
         display: block;

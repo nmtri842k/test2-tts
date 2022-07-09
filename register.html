@@ -13,9 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="./assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
-
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
 
     <title>Shop coin USA</title>
@@ -41,7 +42,7 @@
         <div class="container">
             <div class="grid wide">
                 <div class="row">
-                    <div class="modal c-o-4 c-12">
+                    <div class="modal wow backInUp c-o-4 c-12">
                         <div class="registor-wrap">
                             <div class="registor-title">
                                 <h3>CREATE TO YOUR ACCOUNT</h3>
@@ -83,10 +84,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="login-account c-12">
+                    <div class="login-account wow bounceInDown c-12">
                         <span>Already have an account? <a href="login.html">Login</a></span>
                     </div>
-                    <div class="creat-cookie c-12 c-o-3 ">
+                    <div class="creat-cookie wow bounceInDown c-12 c-o-3 ">
                         <ul class="cookie-list">
                             <li class="cookie-item">
                                 <a href="">Privacy Notice</a>
@@ -102,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <footer class=" footer">
+        <footer class=" footer wow bounceInRight">
             <div class="grid wide">
                 <div class="footer-wrap row">
                     <ul class="footer-list c-3">
@@ -188,6 +189,8 @@
         </footer>
     </div>
     <script>
+        new WOW().init();
+
         // chuyen tab-header
         const $ = document.querySelector.bind(document)
         const $$ = document.querySelectorAll.bind(document)

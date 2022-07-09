@@ -15,6 +15,10 @@
         rel="stylesheet">
     <title>Shop coin USA</title>
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
 </head>
 
 <body>
@@ -105,11 +109,10 @@
         </header>
         <div class="container">
             <div class="grid wide">
-                <div class="content" id="headerw">
-                    <div class="content-img">
-
+                <div class="content " id="headerw">
+                    <div class="content-img wow backInLeft ">
                     </div>
-                    <div class="content-wrap">
+                    <div class="content-wrap wow bounceInDown">
                         <div class="content-wrap-title">
                             <h2>1. ĐĂNG KÝ TÀI KHOẢN:</h2>
                         </div>
@@ -119,7 +122,7 @@
                         </span>
                         <div class="content-wrap-img"><img src="./assets/img/register.jpg" alt="" /></div>
                     </div>
-                    <div class="content-wrap">
+                    <div class="content-wrap wow bounceInDown">
                         <div class="content-wrap-title">
                             <h2>2. CÁCH NẠP TIỀN VÀO TÀI KHOẢN:</h2>
                         </div>
@@ -143,7 +146,7 @@
                             <img src="./assets/img/6.jpg" alt="" />
                         </div>
                     </div>
-                    <div class="content-wrap">
+                    <div class="content-wrap wow bounceInDown">
                         <h2 class="content-wrap-title-1">HƯỚNG DẪN MUA COIN</h2>
                         <span class="content-wrap-desc">Ở giao diện “Home” chọn “Buy”–>Nhập số lượng Coin muốn
                             mua–>Nhấn “Buy”, vào “My Coin” để xem Coin mình đang có.
@@ -154,7 +157,7 @@
                             <img src="./assets/img/9.jpg" alt="" />
                         </div>
                     </div>
-                    <div class="content-wrap">
+                    <div class="content-wrap wow bounceInDown">
                         <div class="content-wrap-title-1">
                             <h3>HƯỚNG DẪN BÁN COIN</h3>
                         </div>
@@ -166,7 +169,7 @@
                             <img src="./assets/img/11.jpg" alt="" />
                         </div>
                     </div>
-                    <div class="content-wrap">
+                    <div class="content-wrap wow bounceInDown">
                         <h2 class="content-wrap-title-1">HƯỚNG DẪN RÚT TIỀN</h2>
                         <span class="content-wrap-desc">Vào “Profile” chọn “Upload Document”–>Tải CCCD hoặc CMND lên
                             nhấn chọn “Change your Document”
@@ -187,6 +190,11 @@
                 <i class="ti-arrow-circle-up icon-up"></i>
             </a>
         </div>
+        <div class="footer-call">
+            <a href="" class="footer-call-link">
+                <i class="footer-call-icon fas fa-phone-alt"></i>
+            </a>
+        </div>
         <footer class=" footer">
             <div class="grid wide">
                 <p>Copyright 2022 <a href="" class="footer-link">© Shop Coin USA</a></p>
@@ -196,6 +204,8 @@
     </div>
     <script>
         // scroll
+        new WOW().init();
+
         window.addEventListener("scroll", function () {
             var header = document.querySelector("header")
             header.classList.toggle("sticky", window.scrollY > 100)
